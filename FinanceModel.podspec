@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 			well it is indeed a finance model jo ktejklrjwe
                    DESC
 
-  s.homepage     = "http://EXAMPLE/FinanceModel"
+  s.homepage     = "https://github.com/svenvanderheide/financeModel"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'FinanceModel/Classes/**/*'
+  s.source_files  = 'FinanceModel/**/*'
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

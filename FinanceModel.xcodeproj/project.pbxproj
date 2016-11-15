@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		70426EE11DDA5797000BA15C /* FinanceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 70426EDF1DDA5797000BA15C /* FinanceModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70426EEB1DDA68FC000BA15C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EE71DDA68FC000BA15C /* Utils.swift */; };
+		70426EEC1DDA68FC000BA15C /* JournalEntryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EE81DDA68FC000BA15C /* JournalEntryComponent.swift */; };
+		70426EED1DDA68FC000BA15C /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EE91DDA68FC000BA15C /* JournalEntry.swift */; };
+		70426EEE1DDA68FC000BA15C /* BalanceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EEA1DDA68FC000BA15C /* BalanceItem.swift */; };
 		7256EC226D34BDF5F7E7463D /* Pods_FinanceModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175F9DC9BB5EE9674FBCC350 /* Pods_FinanceModel.framework */; };
 /* End PBXBuildFile section */
 
@@ -16,6 +20,10 @@
 		70426EDC1DDA5797000BA15C /* FinanceModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FinanceModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70426EDF1DDA5797000BA15C /* FinanceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinanceModel.h; sourceTree = "<group>"; };
 		70426EE01DDA5797000BA15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70426EE71DDA68FC000BA15C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		70426EE81DDA68FC000BA15C /* JournalEntryComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryComponent.swift; sourceTree = "<group>"; };
+		70426EE91DDA68FC000BA15C /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		70426EEA1DDA68FC000BA15C /* BalanceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceItem.swift; sourceTree = "<group>"; };
 		C4C026D8C3EC8121A6F1958C /* Pods-FinanceModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceModel/Pods-FinanceModel.debug.xcconfig"; sourceTree = "<group>"; };
 		C56AD3FED6850264F11E689A /* Pods-FinanceModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceModel/Pods-FinanceModel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +69,10 @@
 		70426EDE1DDA5797000BA15C /* FinanceModel */ = {
 			isa = PBXGroup;
 			children = (
+				70426EE71DDA68FC000BA15C /* Utils.swift */,
+				70426EE81DDA68FC000BA15C /* JournalEntryComponent.swift */,
+				70426EE91DDA68FC000BA15C /* JournalEntry.swift */,
+				70426EEA1DDA68FC000BA15C /* BalanceItem.swift */,
 				70426EDF1DDA5797000BA15C /* FinanceModel.h */,
 				70426EE01DDA5797000BA15C /* Info.plist */,
 			);
@@ -122,6 +134,7 @@
 					70426EDB1DDA5797000BA15C = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3TNE4S4GXR;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -191,6 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70426EED1DDA68FC000BA15C /* JournalEntry.swift in Sources */,
+				70426EEE1DDA68FC000BA15C /* BalanceItem.swift in Sources */,
+				70426EEC1DDA68FC000BA15C /* JournalEntryComponent.swift in Sources */,
+				70426EEB1DDA68FC000BA15C /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4C026D8C3EC8121A6F1958C /* Pods-FinanceModel.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3TNE4S4GXR;
@@ -312,6 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pwc.FinanceModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -320,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C56AD3FED6850264F11E689A /* Pods-FinanceModel.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3TNE4S4GXR;
@@ -355,6 +375,7 @@
 				70426EE61DDA5797000BA15C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

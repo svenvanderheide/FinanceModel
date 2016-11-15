@@ -9,7 +9,7 @@
 import ObjectMapper
 import Foundation
 
-class JournalEntry: NSObject, Mappable{
+public class JournalEntry: NSObject, Mappable{
     var name:String
     var date:Date
     var repeatable:Bool?
@@ -36,7 +36,7 @@ class JournalEntry: NSObject, Mappable{
             return nil
         }
     }
-    required init?(map: Map){
+    required public init?(map: Map){
         name = "hoi"
         date = NSDate() as Date
         id = NSUUID().uuidString
@@ -109,7 +109,7 @@ class JournalEntry: NSObject, Mappable{
         }
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         name    <- map["Name"]
         date    <- (map["Date"], DateTransform())
         id      <- map["ID"]

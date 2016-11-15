@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class JournalEntryComponent: NSObject, Mappable {
+public class JournalEntryComponent: NSObject, Mappable {
     var isDebet:Bool
     var amount:Float
     var balanceItem:BalanceItem
@@ -26,7 +26,7 @@ class JournalEntryComponent: NSObject, Mappable {
         
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         isDebet = true
         amount = 0
         balanceItem = balanceItemList.first!
@@ -48,7 +48,7 @@ class JournalEntryComponent: NSObject, Mappable {
         }
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         isDebet    <- (map["IsDebit"], BooleanTransform())
         amount    <- map["Amount"]
         balanceItem    <- (map["BIID"], BalanceItemTransform())

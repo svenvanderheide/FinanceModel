@@ -7,21 +7,21 @@
 //
 import Foundation
 
-func createNumberFormatter()->NumberFormatter{
+public func createNumberFormatter()->NumberFormatter{
     let nf = NumberFormatter()
     nf.numberStyle = .decimal
     // Configure the number formatter to your liking
     return nf
 }
 
-func createDateFormatter()->DateFormatter{
+public func createDateFormatter()->DateFormatter{
     let df = DateFormatter()
     df.dateStyle = .medium
     // Configure the number formatter to your liking
     return df
 }
 
-extension Date {
+public extension Date {
     func isGreaterThanDate(_ dateToCompare: Date) -> Bool {
         //Declare Variables
         var isGreater = false
@@ -78,7 +78,7 @@ extension Date {
     }
 }
 
-func jsonIfyArray(_ keys:[String], values:[String])->String{
+public func jsonIfyArray(_ keys:[String], values:[String])->String{
     var json = "{"
     if(keys.count == values.count){
         for index in 0...(keys.count - 2){

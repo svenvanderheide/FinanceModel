@@ -9,7 +9,7 @@
 import ObjectMapper
 import Foundation
 
-class BalanceItem: NSObject, Mappable {
+public class BalanceItem: NSObject, Mappable {
     var isDebet:Bool = false
     var name:String = "hoi"
     var id:String = UUID().uuidString
@@ -18,7 +18,7 @@ class BalanceItem: NSObject, Mappable {
     var mainBalanceItem:BalanceItem?
     var relatedBalanceItem = [BalanceItem]()
     
-    init(mainBalanceItem newIsDebet:Bool, newName:String){
+    public init(mainBalanceItem newIsDebet:Bool, newName:String){
         isDebet = newIsDebet
         name = newName
         id = UUID().uuidString
@@ -39,7 +39,7 @@ class BalanceItem: NSObject, Mappable {
         print("created new sub balance Item: ", newName)
     }
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         super.init()
         self.mapping(map: map)
         balanceItemList.append(self)
@@ -120,7 +120,7 @@ class BalanceItem: NSObject, Mappable {
         return [totalPositveAmountAmount,totalNegativeAmount]
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         name    <- map["Name"]
         isDebet    <- (map["IsDebit"], BooleanTransform())
         id      <- map["ID"]
@@ -136,30 +136,30 @@ class BalanceItem: NSObject, Mappable {
 }
 
 
-class BooleanTransform: TransformType{
-    typealias Object = Bool
-    typealias JSON = String
-    func transformFromJSON(_ value: Any?) -> Object?{
+public class BooleanTransform: TransformType{
+    public typealias Object = Bool
+    public typealias JSON = String
+    public func transformFromJSON(_ value: Any?) -> Object?{
 
         return (value as? String  == "1") ? true : false;
     }
     
-    func transformToJSON(_ value: Object?) -> JSON?{
+    public func transformToJSON(_ value: Object?) -> JSON?{
         return value! ? "1"  : "0";
     }
 }
 
-class BalanceItemTransform: TransformType{
-    typealias Object = BalanceItem
-    typealias JSON = String
-    func transformFromJSON(_ value: Any?) -> Object?{
+public class BalanceItemTransform: TransformType{
+    public typealias Object = BalanceItem
+    public typealias JSON = String
+    public func transformFromJSON(_ value: Any?) -> Object?{
         let index = balanceItemList.index { (bi) -> Bool in
             bi.id == value as? String
         }
         return index != nil ? balanceItemList[index!] : nil
     }
     
-    func transformToJSON(_ value: Object?) -> JSON?{
+    public func transformToJSON(_ value: Object?) -> JSON?{
         return value?.id
     }
 }
