@@ -9,14 +9,14 @@
 import ObjectMapper
 import Foundation
 
-public class BalanceItem: NSObject, Mappable {
-    var isDebet:Bool = false
-    var name:String = "hoi"
-    var id:String = UUID().uuidString
-    var journalEntryComponents = [JournalEntryComponent]()
-    var isProfitLoss:Bool?
-    var mainBalanceItem:BalanceItem?
-    var relatedBalanceItem = [BalanceItem]()
+open class BalanceItem: NSObject, Mappable {
+    public var isDebet:Bool = false
+    public var name:String = "hoi"
+    public var id:String = UUID().uuidString
+    public var journalEntryComponents = [JournalEntryComponent]()
+    public var isProfitLoss:Bool?
+    public var mainBalanceItem:BalanceItem?
+    public var relatedBalanceItem = [BalanceItem]()
     
     public init(mainBalanceItem newIsDebet:Bool, newName:String){
         isDebet = newIsDebet
@@ -29,7 +29,7 @@ public class BalanceItem: NSObject, Mappable {
         print("created new balance Item: ", newName)
     }
     
-    init(subBalanceItem newIsDebet:Bool, newName:String, mainBalanceItem:BalanceItem){
+    public init(subBalanceItem newIsDebet:Bool, newName:String, mainBalanceItem:BalanceItem){
         isDebet = newIsDebet
         name = newName
         id = UUID().uuidString
@@ -60,7 +60,7 @@ public class BalanceItem: NSObject, Mappable {
         }
     }
     
-    func getAmountForDate(_ date:Date)->Float{
+    public func getAmountForDate(_ date:Date)->Float{
         var totalAmount:Float = 0
         let relevantComponents = self.journalEntryComponents.filter { (comp) -> Bool in
             (comp.journalEntry?.date.isLessThanDate(date))!
@@ -71,7 +71,7 @@ public class BalanceItem: NSObject, Mappable {
         return totalAmount
     }
     
-    func getTotalAmountForDate(_ date:Date)->Float{
+    public func getTotalAmountForDate(_ date:Date)->Float{
         var totalAmount:Float = 0
         var relevantComponents = self.journalEntryComponents
         for bi in self.relatedBalanceItem{
@@ -86,14 +86,14 @@ public class BalanceItem: NSObject, Mappable {
         }
         return totalAmount
     }
-    func getRelatedItemList()->[BalanceItem]{
+    public func getRelatedItemList()->[BalanceItem]{
         var relatedItems = relatedBalanceItem
         relatedItems.append(self)
         return relatedItems
     }
     
     
-    func getAmountForPeriod(_ date:[Date])->[Float]?{
+    public func getAmountForPeriod(_ date:[Date])->[Float]?{
         var totalPositveAmountAmount:Float = 0
         var totalNegativeAmount:Float = 0
         guard date.count == 2 else{
@@ -135,6 +135,16 @@ public class BalanceItem: NSObject, Mappable {
     
 }
 
+public func splitDebitAndCreditBalanceItems(_ balanceItems:[BalanceItem])->[[BalanceItem]]{
+    let debitBI = balanceItems.filter { (bi) -> Bool in
+        bi.isDebet
+    }
+    let crebitBI = balanceItems.filter { (bi) -> Bool in
+        !bi.isDebet
+    }
+    
+    return [debitBI, crebitBI]
+}
 
 public class BooleanTransform: TransformType{
     public typealias Object = Bool
@@ -166,6 +176,6 @@ public class BalanceItemTransform: TransformType{
 
 
 var dummyBalanceItemList = [""]
-var balanceItemList = [BalanceItem]()
-var journalEntryList = [JournalEntry]()
+public var balanceItemList = [BalanceItem]()
+public var journalEntryList = [JournalEntry]()
 

@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		70426EE11DDA5797000BA15C /* FinanceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 70426EDF1DDA5797000BA15C /* FinanceModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70426EEB1DDA68FC000BA15C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EE71DDA68FC000BA15C /* Utils.swift */; };
-		70426EEC1DDA68FC000BA15C /* JournalEntryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EE81DDA68FC000BA15C /* JournalEntryComponent.swift */; };
-		70426EED1DDA68FC000BA15C /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EE91DDA68FC000BA15C /* JournalEntry.swift */; };
-		70426EEE1DDA68FC000BA15C /* BalanceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EEA1DDA68FC000BA15C /* BalanceItem.swift */; };
+		70426EF61DDBA034000BA15C /* BalanceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EF21DDBA034000BA15C /* BalanceItem.swift */; };
+		70426EF71DDBA034000BA15C /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EF31DDBA034000BA15C /* JournalEntry.swift */; };
+		70426EF81DDBA034000BA15C /* JournalEntryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EF41DDBA034000BA15C /* JournalEntryComponent.swift */; };
+		70426EF91DDBA034000BA15C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EF51DDBA034000BA15C /* Utils.swift */; };
 		7256EC226D34BDF5F7E7463D /* Pods_FinanceModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175F9DC9BB5EE9674FBCC350 /* Pods_FinanceModel.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,10 +20,10 @@
 		70426EDC1DDA5797000BA15C /* FinanceModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FinanceModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70426EDF1DDA5797000BA15C /* FinanceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinanceModel.h; sourceTree = "<group>"; };
 		70426EE01DDA5797000BA15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70426EE71DDA68FC000BA15C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		70426EE81DDA68FC000BA15C /* JournalEntryComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryComponent.swift; sourceTree = "<group>"; };
-		70426EE91DDA68FC000BA15C /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
-		70426EEA1DDA68FC000BA15C /* BalanceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceItem.swift; sourceTree = "<group>"; };
+		70426EF21DDBA034000BA15C /* BalanceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceItem.swift; sourceTree = "<group>"; };
+		70426EF31DDBA034000BA15C /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		70426EF41DDBA034000BA15C /* JournalEntryComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryComponent.swift; sourceTree = "<group>"; };
+		70426EF51DDBA034000BA15C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C4C026D8C3EC8121A6F1958C /* Pods-FinanceModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceModel/Pods-FinanceModel.debug.xcconfig"; sourceTree = "<group>"; };
 		C56AD3FED6850264F11E689A /* Pods-FinanceModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceModel/Pods-FinanceModel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +51,7 @@
 		70426ED21DDA5797000BA15C = {
 			isa = PBXGroup;
 			children = (
+				70426EF11DDBA034000BA15C /* Sources */,
 				70426EDE1DDA5797000BA15C /* FinanceModel */,
 				70426EDD1DDA5797000BA15C /* Products */,
 				E45A499226DFDAA62C46AFFD /* Pods */,
@@ -69,14 +70,21 @@
 		70426EDE1DDA5797000BA15C /* FinanceModel */ = {
 			isa = PBXGroup;
 			children = (
-				70426EE71DDA68FC000BA15C /* Utils.swift */,
-				70426EE81DDA68FC000BA15C /* JournalEntryComponent.swift */,
-				70426EE91DDA68FC000BA15C /* JournalEntry.swift */,
-				70426EEA1DDA68FC000BA15C /* BalanceItem.swift */,
 				70426EDF1DDA5797000BA15C /* FinanceModel.h */,
 				70426EE01DDA5797000BA15C /* Info.plist */,
 			);
 			path = FinanceModel;
+			sourceTree = "<group>";
+		};
+		70426EF11DDBA034000BA15C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				70426EF21DDBA034000BA15C /* BalanceItem.swift */,
+				70426EF31DDBA034000BA15C /* JournalEntry.swift */,
+				70426EF41DDBA034000BA15C /* JournalEntryComponent.swift */,
+				70426EF51DDBA034000BA15C /* Utils.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		E45A499226DFDAA62C46AFFD /* Pods */ = {
@@ -204,10 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70426EED1DDA68FC000BA15C /* JournalEntry.swift in Sources */,
-				70426EEE1DDA68FC000BA15C /* BalanceItem.swift in Sources */,
-				70426EEC1DDA68FC000BA15C /* JournalEntryComponent.swift in Sources */,
-				70426EEB1DDA68FC000BA15C /* Utils.swift in Sources */,
+				70426EF71DDBA034000BA15C /* JournalEntry.swift in Sources */,
+				70426EF61DDBA034000BA15C /* BalanceItem.swift in Sources */,
+				70426EF81DDBA034000BA15C /* JournalEntryComponent.swift in Sources */,
+				70426EF91DDBA034000BA15C /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

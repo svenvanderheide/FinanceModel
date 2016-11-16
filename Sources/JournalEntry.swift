@@ -9,17 +9,17 @@
 import ObjectMapper
 import Foundation
 
-public class JournalEntry: NSObject, Mappable{
-    var name:String
-    var date:Date
-    var repeatable:Bool?
-    var id:String
+open class JournalEntry: NSObject, Mappable{
+    public var name:String
+    public var date:Date
+    public var repeatable:Bool?
+    public var id:String
     
     
-    fileprivate(set) var journalEntryComponents:[JournalEntryComponent]?
+    public var journalEntryComponents:[JournalEntryComponent]?
     
     
-    init?(newName:String, newDate:Date, newJournalEntryComponents:[JournalEntryComponent]) {
+    public init?(newName:String, newDate:Date, newJournalEntryComponents:[JournalEntryComponent]) {
         name = newName
         date = newDate
         id = UUID().uuidString
@@ -50,7 +50,7 @@ public class JournalEntry: NSObject, Mappable{
         journalEntryList.append(self)
     }
     
-    func replaceJournalEntry(_ newName:String, newDate:Date, newJournalEntryComponents:[JournalEntryComponent]){
+    public func replaceJournalEntry(_ newName:String, newDate:Date, newJournalEntryComponents:[JournalEntryComponent]){
         if(checkBalanceComponents(newJournalEntryComponents)){
             name = newName
             date = newDate
@@ -68,7 +68,7 @@ public class JournalEntry: NSObject, Mappable{
         self.addJournalEntryComponentsToBalanceItems()
     }
     
-    func deleteJournalEntry(){
+    public func deleteJournalEntry(){
         if let index = journalEntryList.index(of: self){
             journalEntryList.remove(at: index)
         }

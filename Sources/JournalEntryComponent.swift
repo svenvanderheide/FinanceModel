@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-public class JournalEntryComponent: NSObject, Mappable {
-    var isDebet:Bool
-    var amount:Float
-    var balanceItem:BalanceItem
-    var journalEntry:JournalEntry?
-    var id:String
+open class JournalEntryComponent: NSObject, Mappable {
+    public var isDebet:Bool
+    public var amount:Float
+    public var balanceItem:BalanceItem
+    public var journalEntry:JournalEntry?
+    public var id:String
     
     
-    init(newIsDebet:Bool, newAmount:Float, newBalanceItem:BalanceItem){
+    public init(newIsDebet:Bool, newAmount:Float, newBalanceItem:BalanceItem){
         isDebet = newIsDebet
         amount = newAmount
         balanceItem = newBalanceItem
@@ -56,5 +56,15 @@ public class JournalEntryComponent: NSObject, Mappable {
         id      <- map["ID"]
     }
     
+}
+public func splitDebitAndCreditJournalEntryComponents(_ components:[JournalEntryComponent])->[[JournalEntryComponent]]{
+    let debitComponents = components.filter { (component) -> Bool in
+        component.isDebet
+    }
+    let crebitComponents = components.filter { (component) -> Bool in
+        !component.isDebet
+    }
+    
+    return [debitComponents, crebitComponents]
 }
 
