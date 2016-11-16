@@ -7,7 +7,7 @@
 //
 
 import ObjectMapper
-import Foundation
+import Cocoa
 
 open class BalanceItem: NSObject, Mappable {
     public var isDebet:Bool = false

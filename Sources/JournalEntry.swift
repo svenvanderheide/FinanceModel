@@ -7,7 +7,7 @@
 //
 
 import ObjectMapper
-import Foundation
+import Cocoa
 
 open class JournalEntry: NSObject, Mappable{
     public var name:String
