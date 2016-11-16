@@ -5,7 +5,7 @@
 //  Created by Sven van der Heide on 02-04-16.
 //  Copyright © 2016 Sven van der Heide. All rights reserved.
 //
-import Cocoa
+import Foundation
 
 public func createNumberFormatter()->NumberFormatter{
     let nf = NumberFormatter()

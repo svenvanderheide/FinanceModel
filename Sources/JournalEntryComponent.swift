@@ -6,7 +6,7 @@
 //  Copyright © 2016 Sven van der Heide. All rights reserved.
 //
 
-import Cocoa
+import Foundation
 import ObjectMapper
 
 open class JournalEntryComponent: NSObject, Mappable {
