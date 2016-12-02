@@ -9,7 +9,9 @@
 import ObjectMapper
 import Foundation
 
-open class BalanceItem: NSObject, Mappable {
+
+open class BalanceItem: NSObject, Mappable, DBSender {
+    internal var DBService: DBService?
     public var isDebet:Bool = false
     public var name:String = "hoi"
     public var id:String = UUID().uuidString
@@ -18,11 +20,13 @@ open class BalanceItem: NSObject, Mappable {
     public var mainBalanceItem:BalanceItem?
     public var relatedBalanceItem = [BalanceItem]()
     
+    
     public init(mainBalanceItem newIsDebet:Bool, newName:String){
         isDebet = newIsDebet
         name = newName
         id = UUID().uuidString
         super.init()
+        DBService = SQLService(typeName: "BalanceItem", dbSender: self as! MappableDBSender)
         //let content = "[" + Mapper().toJSONString(self, prettyPrint: false)! + "]"
         //saveBalanceItem(content: content)
         balanceItemList.append(self)

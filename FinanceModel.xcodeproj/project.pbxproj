@@ -12,6 +12,7 @@
 		70426EF71DDBA034000BA15C /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EF31DDBA034000BA15C /* JournalEntry.swift */; };
 		70426EF81DDBA034000BA15C /* JournalEntryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EF41DDBA034000BA15C /* JournalEntryComponent.swift */; };
 		70426EF91DDBA034000BA15C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426EF51DDBA034000BA15C /* Utils.swift */; };
+		70426F651DE4D695000BA15C /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426F641DE4D695000BA15C /* DBService.swift */; };
 		7256EC226D34BDF5F7E7463D /* Pods_FinanceModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175F9DC9BB5EE9674FBCC350 /* Pods_FinanceModel.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		70426EF31DDBA034000BA15C /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		70426EF41DDBA034000BA15C /* JournalEntryComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalEntryComponent.swift; sourceTree = "<group>"; };
 		70426EF51DDBA034000BA15C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		70426F641DE4D695000BA15C /* DBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
 		C4C026D8C3EC8121A6F1958C /* Pods-FinanceModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceModel/Pods-FinanceModel.debug.xcconfig"; sourceTree = "<group>"; };
 		C56AD3FED6850264F11E689A /* Pods-FinanceModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceModel/Pods-FinanceModel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				70426EF21DDBA034000BA15C /* BalanceItem.swift */,
+				70426F641DE4D695000BA15C /* DBService.swift */,
 				70426EF31DDBA034000BA15C /* JournalEntry.swift */,
 				70426EF41DDBA034000BA15C /* JournalEntryComponent.swift */,
 				70426EF51DDBA034000BA15C /* Utils.swift */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70426EF71DDBA034000BA15C /* JournalEntry.swift in Sources */,
+				70426F651DE4D695000BA15C /* DBService.swift in Sources */,
 				70426EF61DDBA034000BA15C /* BalanceItem.swift in Sources */,
 				70426EF81DDBA034000BA15C /* JournalEntryComponent.swift in Sources */,
 				70426EF91DDBA034000BA15C /* Utils.swift in Sources */,
