@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "7c4d22eaef66ddecb631c3aeae07af83"
+build_time: [534032795, 490990000]
+inputs:
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/BalanceItem.swift": [533855845, 0]
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/DBService.swift": [533857815, 0]
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/JournalEntry.swift": [532643541, 0]
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/JournalEntryComponent.swift": [532643547, 0]
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/Utils.swift": [532643550, 0]

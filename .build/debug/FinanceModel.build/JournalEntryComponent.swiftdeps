@@ -1,0 +1,521 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "JournalEntryComponent"
+- "splitDebitAndCreditJournalEntryComponents"
+provides-nominal:
+- "C12FinanceModel21JournalEntryComponent"
+provides-member:
+- ["C12FinanceModel21JournalEntryComponent", ""]
+provides-dynamic-lookup:
+- "journalEntry"
+- "addToBalanceItem"
+- "amount"
+- "isDebet"
+- "deleteFromBalanceItem"
+- "balanceItem"
+- "id"
+depends-top-level:
+- "Mappable"
+- "NSObject"
+- "JournalEntryComponent"
+- "String"
+- !private "!"
+- !private "BooleanTransform"
+- !private "BooleanLiteralType"
+- !private "BalanceItemTransform"
+- !private "StringLiteralType"
+- !private "NSUUID"
+- "JournalEntry"
+- !private "print"
+- "AssignmentPrecedence"
+- !private "<-"
+- !private "UUID"
+- "splitDebitAndCreditJournalEntryComponents"
+- "Float"
+- "Bool"
+- "Map"
+- "BalanceItem"
+- !private "balanceItemList"
+depends-member:
+- !private ["Ps9AnyObject", "BalanceItemTransform"]
+- !private ["Ps9AnyObject", "BooleanTransform"]
+- !private ["Ps9AnyObject", "NSUUID"]
+- !private ["Ps9AnyObject", "Object"]
+- !private ["Ps9AnyObject", "UUID"]
+- !private ["Ps9AnyObject", "addJournalEntryComponent"]
+- ["Ps9AnyObject", "addToBalanceItem"]
+- ["Ps9AnyObject", "amount"]
+- ["Ps9AnyObject", "balanceItem"]
+- !private ["Ps9AnyObject", "balanceItemList"]
+- ["Ps9AnyObject", "deleteFromBalanceItem"]
+- !private ["Ps9AnyObject", "deleteJournalEntryComponent"]
+- ["Ps9AnyObject", "id"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isDebet"]
+- ["Ps9AnyObject", "journalEntry"]
+- ["Ps9AnyObject", "mapping"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "uuidString"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- ["Sa", "deinit"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "first"]
+- !private ["C12FinanceModel11BalanceItem", "addJournalEntryComponent"]
+- ["C12FinanceModel11BalanceItem", "deinit"]
+- !private ["C12FinanceModel11BalanceItem", "deleteJournalEntryComponent"]
+- !private ["C12FinanceModel20BalanceItemTransform", "Object"]
+- ["C12FinanceModel20BalanceItemTransform", "deinit"]
+- !private ["C12FinanceModel20BalanceItemTransform", "init"]
+- !private ["P12ObjectMapper12BaseMappable", "BalanceItemTransform"]
+- !private ["P12ObjectMapper12BaseMappable", "BooleanTransform"]
+- !private ["P12ObjectMapper12BaseMappable", "NSUUID"]
+- !private ["P12ObjectMapper12BaseMappable", "UUID"]
+- !private ["P12ObjectMapper12BaseMappable", "addJournalEntryComponent"]
+- !private ["P12ObjectMapper12BaseMappable", "amount"]
+- !private ["P12ObjectMapper12BaseMappable", "balanceItem"]
+- !private ["P12ObjectMapper12BaseMappable", "balanceItemList"]
+- !private ["P12ObjectMapper12BaseMappable", "deleteJournalEntryComponent"]
+- !private ["P12ObjectMapper12BaseMappable", "id"]
+- ["P12ObjectMapper12BaseMappable", "init"]
+- !private ["P12ObjectMapper12BaseMappable", "isDebet"]
+- ["P12ObjectMapper12BaseMappable", "mapping"]
+- !private ["P12ObjectMapper12BaseMappable", "print"]
+- ["P12ObjectMapper12BaseMappable", ""]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "filter"]
+- !private ["Ps23BidirectionalCollection", "first"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "filter"]
+- !private ["Ps22BidirectionalIndexable", "first"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["C12FinanceModel16BooleanTransform", "Object"]
+- ["C12FinanceModel16BooleanTransform", "deinit"]
+- !private ["C12FinanceModel16BooleanTransform", "init"]
+- !private ["Ps7CVarArg", "BalanceItemTransform"]
+- !private ["Ps7CVarArg", "BooleanTransform"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "NSUUID"]
+- !private ["Ps7CVarArg", "UUID"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "addJournalEntryComponent"]
+- ["Ps7CVarArg", "addToBalanceItem"]
+- ["Ps7CVarArg", "amount"]
+- ["Ps7CVarArg", "balanceItem"]
+- !private ["Ps7CVarArg", "balanceItemList"]
+- ["Ps7CVarArg", "deleteFromBalanceItem"]
+- !private ["Ps7CVarArg", "deleteJournalEntryComponent"]
+- !private ["Ps7CVarArg", "filter"]
+- !private ["Ps7CVarArg", "first"]
+- ["Ps7CVarArg", "id"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "isDebet"]
+- ["Ps7CVarArg", "journalEntry"]
+- ["Ps7CVarArg", "mapping"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "uuidString"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "filter"]
+- !private ["Ps10Collection", "first"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "BalanceItemTransform"]
+- !private ["Ps28CustomDebugStringConvertible", "BooleanTransform"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "NSUUID"]
+- !private ["Ps28CustomDebugStringConvertible", "UUID"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addJournalEntryComponent"]
+- ["Ps28CustomDebugStringConvertible", "addToBalanceItem"]
+- ["Ps28CustomDebugStringConvertible", "amount"]
+- ["Ps28CustomDebugStringConvertible", "balanceItem"]
+- !private ["Ps28CustomDebugStringConvertible", "balanceItemList"]
+- ["Ps28CustomDebugStringConvertible", "deleteFromBalanceItem"]
+- !private ["Ps28CustomDebugStringConvertible", "deleteJournalEntryComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "filter"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
+- ["Ps28CustomDebugStringConvertible", "id"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "isDebet"]
+- ["Ps28CustomDebugStringConvertible", "journalEntry"]
+- ["Ps28CustomDebugStringConvertible", "mapping"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "uuidString"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "filter"]
+- !private ["Ps17CustomReflectable", "first"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "uuidString"]
+- !private ["Ps23CustomStringConvertible", "BalanceItemTransform"]
+- !private ["Ps23CustomStringConvertible", "BooleanTransform"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "NSUUID"]
+- !private ["Ps23CustomStringConvertible", "UUID"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addJournalEntryComponent"]
+- ["Ps23CustomStringConvertible", "addToBalanceItem"]
+- ["Ps23CustomStringConvertible", "amount"]
+- ["Ps23CustomStringConvertible", "balanceItem"]
+- !private ["Ps23CustomStringConvertible", "balanceItemList"]
+- ["Ps23CustomStringConvertible", "deleteFromBalanceItem"]
+- !private ["Ps23CustomStringConvertible", "deleteJournalEntryComponent"]
+- !private ["Ps23CustomStringConvertible", "filter"]
+- !private ["Ps23CustomStringConvertible", "first"]
+- ["Ps23CustomStringConvertible", "id"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "isDebet"]
+- ["Ps23CustomStringConvertible", "journalEntry"]
+- ["Ps23CustomStringConvertible", "mapping"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "uuidString"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["P12FinanceModel8DBSender", "addJournalEntryComponent"]
+- !private ["P12FinanceModel8DBSender", "deleteJournalEntryComponent"]
+- !private ["Ps9Equatable", "BalanceItemTransform"]
+- !private ["Ps9Equatable", "BooleanTransform"]
+- !private ["Ps9Equatable", "NSUUID"]
+- !private ["Ps9Equatable", "UUID"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addJournalEntryComponent"]
+- ["Ps9Equatable", "addToBalanceItem"]
+- ["Ps9Equatable", "amount"]
+- ["Ps9Equatable", "balanceItem"]
+- !private ["Ps9Equatable", "balanceItemList"]
+- ["Ps9Equatable", "deleteFromBalanceItem"]
+- !private ["Ps9Equatable", "deleteJournalEntryComponent"]
+- ["Ps9Equatable", "id"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "isDebet"]
+- ["Ps9Equatable", "journalEntry"]
+- ["Ps9Equatable", "mapping"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "uuidString"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "filter"]
+- !private ["Ps25ExpressibleByArrayLiteral", "first"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Sf", "deinit"]
+- !private ["Ps8Hashable", "BalanceItemTransform"]
+- !private ["Ps8Hashable", "BooleanTransform"]
+- !private ["Ps8Hashable", "NSUUID"]
+- !private ["Ps8Hashable", "UUID"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addJournalEntryComponent"]
+- ["Ps8Hashable", "addToBalanceItem"]
+- ["Ps8Hashable", "amount"]
+- ["Ps8Hashable", "balanceItem"]
+- !private ["Ps8Hashable", "balanceItemList"]
+- ["Ps8Hashable", "deleteFromBalanceItem"]
+- !private ["Ps8Hashable", "deleteJournalEntryComponent"]
+- ["Ps8Hashable", "id"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "isDebet"]
+- ["Ps8Hashable", "journalEntry"]
+- ["Ps8Hashable", "mapping"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "uuidString"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "filter"]
+- !private ["Ps9Indexable", "first"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "filter"]
+- !private ["Ps13IndexableBase", "first"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- ["C12FinanceModel21JournalEntryComponent", "BalanceItem"]
+- !private ["C12FinanceModel21JournalEntryComponent", "BalanceItemTransform"]
+- ["C12FinanceModel21JournalEntryComponent", "Bool"]
+- !private ["C12FinanceModel21JournalEntryComponent", "BooleanTransform"]
+- ["C12FinanceModel21JournalEntryComponent", "Float"]
+- ["C12FinanceModel21JournalEntryComponent", "JournalEntry"]
+- ["C12FinanceModel21JournalEntryComponent", "Map"]
+- !private ["C12FinanceModel21JournalEntryComponent", "NSUUID"]
+- ["C12FinanceModel21JournalEntryComponent", "String"]
+- !private ["C12FinanceModel21JournalEntryComponent", "UUID"]
+- ["C12FinanceModel21JournalEntryComponent", "addToBalanceItem"]
+- ["C12FinanceModel21JournalEntryComponent", "amount"]
+- ["C12FinanceModel21JournalEntryComponent", "balanceItem"]
+- !private ["C12FinanceModel21JournalEntryComponent", "balanceItemList"]
+- ["C12FinanceModel21JournalEntryComponent", "deinit"]
+- ["C12FinanceModel21JournalEntryComponent", "deleteFromBalanceItem"]
+- ["C12FinanceModel21JournalEntryComponent", "id"]
+- ["C12FinanceModel21JournalEntryComponent", "init"]
+- ["C12FinanceModel21JournalEntryComponent", "isDebet"]
+- ["C12FinanceModel21JournalEntryComponent", "journalEntry"]
+- ["C12FinanceModel21JournalEntryComponent", "mapping"]
+- !private ["C12FinanceModel21JournalEntryComponent", "print"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- ["C12ObjectMapper3Map", "deinit"]
+- !private ["C12ObjectMapper3Map", "subscript"]
+- !private ["P12ObjectMapper8Mappable", "BalanceItemTransform"]
+- !private ["P12ObjectMapper8Mappable", "BooleanTransform"]
+- !private ["P12ObjectMapper8Mappable", "NSUUID"]
+- !private ["P12ObjectMapper8Mappable", "UUID"]
+- !private ["P12ObjectMapper8Mappable", "addJournalEntryComponent"]
+- !private ["P12ObjectMapper8Mappable", "amount"]
+- !private ["P12ObjectMapper8Mappable", "balanceItem"]
+- !private ["P12ObjectMapper8Mappable", "balanceItemList"]
+- !private ["P12ObjectMapper8Mappable", "deleteJournalEntryComponent"]
+- !private ["P12ObjectMapper8Mappable", "id"]
+- ["P12ObjectMapper8Mappable", "init"]
+- !private ["P12ObjectMapper8Mappable", "isDebet"]
+- ["P12ObjectMapper8Mappable", "mapping"]
+- !private ["P12ObjectMapper8Mappable", "print"]
+- ["P12ObjectMapper8Mappable", ""]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "filter"]
+- !private ["Ps17MutableCollection", "first"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "filter"]
+- !private ["Ps16MutableIndexable", "first"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "uuidString"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "uuidString"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "BalanceItem"]
+- !private ["CSo8NSObject", "BalanceItemTransform"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "BooleanTransform"]
+- ["CSo8NSObject", "Float"]
+- ["CSo8NSObject", "JournalEntry"]
+- ["CSo8NSObject", "Map"]
+- !private ["CSo8NSObject", "NSUUID"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UUID"]
+- !private ["CSo8NSObject", "addJournalEntryComponent"]
+- ["CSo8NSObject", "addToBalanceItem"]
+- ["CSo8NSObject", "amount"]
+- ["CSo8NSObject", "balanceItem"]
+- !private ["CSo8NSObject", "balanceItemList"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "deleteFromBalanceItem"]
+- !private ["CSo8NSObject", "deleteJournalEntryComponent"]
+- ["CSo8NSObject", "id"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isDebet"]
+- ["CSo8NSObject", "journalEntry"]
+- ["CSo8NSObject", "mapping"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "uuidString"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "BalanceItemTransform"]
+- !private ["PSo16NSObjectProtocol", "BooleanTransform"]
+- !private ["PSo16NSObjectProtocol", "NSUUID"]
+- !private ["PSo16NSObjectProtocol", "UUID"]
+- !private ["PSo16NSObjectProtocol", "addJournalEntryComponent"]
+- ["PSo16NSObjectProtocol", "addToBalanceItem"]
+- ["PSo16NSObjectProtocol", "amount"]
+- ["PSo16NSObjectProtocol", "balanceItem"]
+- !private ["PSo16NSObjectProtocol", "balanceItemList"]
+- ["PSo16NSObjectProtocol", "deleteFromBalanceItem"]
+- !private ["PSo16NSObjectProtocol", "deleteJournalEntryComponent"]
+- ["PSo16NSObjectProtocol", "id"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isDebet"]
+- ["PSo16NSObjectProtocol", "journalEntry"]
+- ["PSo16NSObjectProtocol", "mapping"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "uuidString"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo19NSPasteboardReading", "init"]
+- !private ["PSo19NSPasteboardWriting", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "uuidString"]
+- !private ["CSo8NSString", "init"]
+- ["CSo6NSUUID", "deinit"]
+- !private ["CSo6NSUUID", "init"]
+- !private ["CSo6NSUUID", "uuidString"]
+- ["Os5Never", "deinit"]
+- ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "filter"]
+- !private ["Ps22RandomAccessCollection", "first"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "filter"]
+- !private ["Ps21RandomAccessIndexable", "first"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "filter"]
+- !private ["Ps26RangeReplaceableCollection", "first"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "filter"]
+- !private ["Ps25RangeReplaceableIndexable", "first"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "uuidString"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "filter"]
+- !private ["Ps8Sequence", "first"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["P12ObjectMapper13TransformType", "Object"]
+- !private ["P12ObjectMapper13TransformType", "init"]
+- ["Su", "deinit"]
+- ["V10Foundation4UUID", "deinit"]
+- !private ["V10Foundation4UUID", "init"]
+- !private ["V10Foundation4UUID", "uuidString"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "filter"]
+- !private ["Ps14_ArrayProtocol", "first"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "filter"]
+- !private ["Ps24_DestructorSafeContainer", "first"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "uuidString"]
+- !private ["Ps9_Hashable", "BalanceItemTransform"]
+- !private ["Ps9_Hashable", "BooleanTransform"]
+- !private ["Ps9_Hashable", "NSUUID"]
+- !private ["Ps9_Hashable", "UUID"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addJournalEntryComponent"]
+- ["Ps9_Hashable", "addToBalanceItem"]
+- ["Ps9_Hashable", "amount"]
+- ["Ps9_Hashable", "balanceItem"]
+- !private ["Ps9_Hashable", "balanceItemList"]
+- ["Ps9_Hashable", "deleteFromBalanceItem"]
+- !private ["Ps9_Hashable", "deleteJournalEntryComponent"]
+- ["Ps9_Hashable", "id"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "isDebet"]
+- ["Ps9_Hashable", "journalEntry"]
+- ["Ps9_Hashable", "mapping"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "uuidString"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "filter"]
+- !private ["Ps21_ObjectiveCBridgeable", "first"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "uuidString"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "C12FinanceModel11BalanceItem"
+- "C12FinanceModel20BalanceItemTransform"
+- "P12ObjectMapper12BaseMappable"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- "Sb"
+- "C12FinanceModel16BooleanTransform"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "P12FinanceModel8DBSender"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Sf"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- "C12FinanceModel21JournalEntryComponent"
+- !private "Ps25LosslessStringConvertible"
+- "C12ObjectMapper3Map"
+- "P12ObjectMapper8Mappable"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo19NSPasteboardReading"
+- !private "PSo19NSPasteboardWriting"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "CSo6NSUUID"
+- "Os5Never"
+- "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "Ps8Sequence"
+- "Vs12StaticString"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "P12ObjectMapper13TransformType"
+- "Su"
+- "V10Foundation4UUID"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "9e9f1f004054fbb0d9f802056be090d0"

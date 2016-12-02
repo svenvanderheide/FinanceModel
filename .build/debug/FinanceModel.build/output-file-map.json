@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/master.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/BalanceItem.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/BalanceItem.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/BalanceItem.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/BalanceItem~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/BalanceItem.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/DBService.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/DBService.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/DBService.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/DBService~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/DBService.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/JournalEntry.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/JournalEntry.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/JournalEntry.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/JournalEntry~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/JournalEntry.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/JournalEntryComponent.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/JournalEntryComponent.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/JournalEntryComponent.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/JournalEntryComponent~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/JournalEntryComponent.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Sources/Utils.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/Utils.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/Utils.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/Utils~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/FinanceModel.build/Utils.swiftdeps"
+  }
+}

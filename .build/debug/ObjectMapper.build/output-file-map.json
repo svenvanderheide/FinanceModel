@@ -1,0 +1,137 @@
+{
+  "": {
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/master.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/CustomDateFormatTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/CustomDateFormatTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/CustomDateFormatTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/CustomDateFormatTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/CustomDateFormatTransform.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/DataTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DataTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DataTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DataTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DataTransform.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/DateFormatterTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DateFormatterTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DateFormatterTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DateFormatterTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DateFormatterTransform.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/DateTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DateTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DateTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DateTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DateTransform.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/DictionaryTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DictionaryTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DictionaryTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DictionaryTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/DictionaryTransform.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/EnumOperators.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/EnumOperators.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/EnumOperators.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/EnumOperators~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/EnumOperators.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/EnumTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/EnumTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/EnumTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/EnumTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/EnumTransform.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/FromJSON.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/FromJSON.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/FromJSON.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/FromJSON~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/FromJSON.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/HexColorTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/HexColorTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/HexColorTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/HexColorTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/HexColorTransform.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/ImmutableMappable.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ImmutableMappable.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ImmutableMappable.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ImmutableMappable~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ImmutableMappable.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/ISO8601DateTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ISO8601DateTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ISO8601DateTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ISO8601DateTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ISO8601DateTransform.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/Map.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Map.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Map.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Map~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Map.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/MapError.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/MapError.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/MapError.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/MapError~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/MapError.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/Mappable.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Mappable.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Mappable.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Mappable~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Mappable.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/Mapper.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Mapper.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Mapper.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Mapper~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Mapper.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/NSDecimalNumberTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/NSDecimalNumberTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/NSDecimalNumberTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/NSDecimalNumberTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/NSDecimalNumberTransform.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/Operators.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Operators.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Operators.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Operators~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/Operators.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/ToJSON.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ToJSON.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ToJSON.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ToJSON~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/ToJSON.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/TransformOf.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformOf.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformOf.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformOf~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformOf.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/TransformOperators.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformOperators.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformOperators.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformOperators~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformOperators.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/TransformType.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformType.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformType.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformType~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/TransformType.swiftdeps"
+  },
+  "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/Packages/ObjectMapper-2.2.1/Sources/URLTransform.swift": {
+    "dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/URLTransform.d",
+    "object": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/URLTransform.swift.o",
+    "swiftmodule": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/URLTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/MacSvenvdHeide/Swift/financeModelPod2/FinanceModel/.build/debug/ObjectMapper.build/URLTransform.swiftdeps"
+  }
+}
