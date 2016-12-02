@@ -11,7 +11,7 @@ import Foundation
 
 
 open class BalanceItem: NSObject, Mappable, DBSender {
-    internal var DBService: DBService?
+    public var DBService: DBService?
     public var isDebet:Bool = false
     public var name:String = "hoi"
     public var id:String = UUID().uuidString
@@ -130,7 +130,7 @@ open class BalanceItem: NSObject, Mappable, DBSender {
         id      <- map["ID"]
         mainBalanceItem <- map["parentBIID"]
     }
-    func getWriteStatemnt()->String{
+    public func getWriteStatemnt()->String{
         return "INSERT INTO `perfectdb`.`BalanceItem` (`ID`, `Name`, `IsDebit`, `UID`) VALUES ('\(id)', '\(name)', \(isDebet), 123213);"
     }
     
