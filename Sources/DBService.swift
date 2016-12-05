@@ -10,9 +10,9 @@ import Foundation
 import ObjectMapper
 
 public protocol DBService{
-    func saveBalanceItem()
-    func deleteBalanceItem()
-    static func getBalanceItem()
+    func saveFinanceObject()
+    func deleteFinanceObject()
+    static func getFinanceObject()
 }
 
 public protocol MappableDBSender:DBSender, Mappable{
@@ -33,10 +33,11 @@ open class SQLService:DBService{
         self.typeName = typeName
         self.dbSender = dbSender
     }
-    public func saveBalanceItem() {
-        let request = NSMutableURLRequest(url: URL(string: "http://127.0.0.1:8181/\(typeName)")!)
-        let content = dbSender.toJSONString(prettyPrint: false);//"hoi"//Mapper().toJSONString(DBSender, prettyPrint: false)
-        let entry = "content=[\(content)]"
+    public func saveFinanceObject() {
+        let request = NSMutableURLRequest(url: URL(string: "\(localUrl)financeObject")!)
+        let content = dbSender.toJSONString(prettyPrint: false)!;//"hoi"//Mapper().toJSONString(DBSender, prettyPrint: false)
+        
+        let entry = "\(self.typeName)=[\(content)]"
         request.httpMethod = "POST"
         let postString = entry
         request.httpBody = postString.data(using: String.Encoding.utf8)
@@ -58,11 +59,11 @@ open class SQLService:DBService{
         }
         task.resume()
     }
-    public func deleteBalanceItem() {
+    public func deleteFinanceObject() {
         print("hoi")
     }
     
-    public static func getBalanceItem() {
+    public static func getFinanceObject() {
     }
     
 }

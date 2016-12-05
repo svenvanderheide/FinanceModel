@@ -10,7 +10,7 @@ import ObjectMapper
 import Foundation
 
 
-open class BalanceItem: NSObject, Mappable, DBSender {
+open class BalanceItem: NSObject, MappableDBSender  {
     public var DBService: DBService?
     public var isDebet:Bool = false
     public var name:String = "hoi"

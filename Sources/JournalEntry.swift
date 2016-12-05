@@ -9,7 +9,8 @@
 import ObjectMapper
 import Foundation
 
-open class JournalEntry: NSObject, Mappable{
+open class JournalEntry: NSObject, MappableDBSender{
+    public var DBService: DBService?
     public var name:String
     public var date:Date
     public var repeatable:Bool?
@@ -24,6 +25,7 @@ open class JournalEntry: NSObject, Mappable{
         date = newDate
         id = UUID().uuidString
         super.init()
+        DBService = SQLService(typeName: "JournalEntry", dbSender: self as! MappableDBSender)
         if(checkBalanceComponents(newJournalEntryComponents)){
             journalEntryComponents = newJournalEntryComponents
             journalEntryList.append(self)
@@ -107,6 +109,16 @@ open class JournalEntry: NSObject, Mappable{
             print("balance item not in balance" , totalValue)
             return false
         }
+    }
+    
+    public func getWriteStatemnt()->String{
+        var writeStatement = "";
+        for jec in journalEntryComponents!{
+            //"INSERT INTO `JournalEntryComponent` (`BIID`, `Amount`, `IsDebit`, `JEID`) VALUES (1, $a , $id, 1);";
+            writeStatement += "INSERT INTO `perfectdb`.`JournalEntryComponent` (`ID`, `BIID`, `Amount`, `IsDebit`, `JEID`) VALUES ('\(jec.id )','\(jec.balanceItem.id )', '\(jec.amount)', \(jec.isDebet), \(jec.journalEntry!.id)); ";
+        }
+        writeStatement += "INSERT INTO `perfectdb`.`JournalEntry` (`ID`, `Name`, `Date`, `UID`) VALUES ('\(self.id)','\(self.name)', '\(DateTransform().transformToJSON(self.date))', 123213);";
+        return writeStatement;
     }
     
     public func mapping(map: Map) {
