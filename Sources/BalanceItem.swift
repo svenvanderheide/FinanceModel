@@ -26,7 +26,7 @@ open class BalanceItem: NSObject, MappableDBSender  {
         name = newName
         id = UUID().uuidString
         super.init()
-        DBService = SQLService(typeName: "BalanceItem", dbSender: self as! MappableDBSender)
+        DBService = SQLService(typeName: "BalanceItem", dbSender: self as MappableDBSender)
         //let content = "[" + Mapper().toJSONString(self, prettyPrint: false)! + "]"
         //saveBalanceItem(content: content)
         balanceItemList.append(self)

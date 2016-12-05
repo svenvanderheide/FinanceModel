@@ -12,7 +12,7 @@ import ObjectMapper
 public protocol DBService{
     func saveFinanceObject()
     func deleteFinanceObject()
-    static func getFinanceObject()
+    static func getFinanceObject(financeType:String)
 }
 
 public protocol MappableDBSender:DBSender, Mappable{
@@ -25,8 +25,8 @@ public protocol DBSender{
 }
 
 open class SQLService:DBService{
-    let localUrl = "http://127.0.0.1:8181/";
-    let serverUrl = "http://ec2-52-57-194-158.eu-central-1.compute.amazonaws.com:8181";
+    static let localUrl = "http://127.0.0.1:8181/";
+    static let serverUrl = "http://ec2-52-57-194-158.eu-central-1.compute.amazonaws.com:8181";
     var dbSender: MappableDBSender
     var typeName:String
     init(typeName: String, dbSender: MappableDBSender) {
@@ -34,7 +34,7 @@ open class SQLService:DBService{
         self.dbSender = dbSender
     }
     public func saveFinanceObject() {
-        let request = NSMutableURLRequest(url: URL(string: "\(localUrl)financeObject")!)
+        let request = NSMutableURLRequest(url: URL(string: "\(SQLService.localUrl)financeObject")!)
         let content = dbSender.toJSONString(prettyPrint: false)!;//"hoi"//Mapper().toJSONString(DBSender, prettyPrint: false)
         
         let entry = "\(self.typeName)=[\(content)]"
@@ -63,7 +63,36 @@ open class SQLService:DBService{
         print("hoi")
     }
     
-    public static func getFinanceObject() {
+    public static func getFinanceObject(financeType:String) {
+        let urlRequest = NSMutableURLRequest(url: URL(string: "\(localUrl)financeObject/\(financeType)")!) //getBalanceItems.php"
+        let task = URLSession.shared.dataTask(with: urlRequest as URLRequest) {
+            (data, response, error) -> Void in
+            
+            let httpResponse = response as! HTTPURLResponse
+            let statusCode = httpResponse.statusCode
+            
+            if (statusCode == 200) {
+                print("Everyone is fine, file downloaded successfully.",data)
+                
+                do{
+                    
+                    let json = try JSONSerialization.jsonObject(with: data!, options:[])
+                    print(json)
+                    for entry in json as! [[String: AnyObject]]{
+                        if(financeType == "BalanceItem"){
+                            let bi = BalanceItem(map: Map(mappingType: .fromJSON , JSON: entry))
+                        }
+                        //let je = JournalEntry(map: Map(mappingType: .fromJSON , JSON: entry))
+                        //print("sven hoi",  bi?.isDebet)
+                    }
+
+                }catch {
+                    print("Error with Json: \(error)")
+                }
+                
+            }
+        }
+        task.resume()
     }
     
 }
