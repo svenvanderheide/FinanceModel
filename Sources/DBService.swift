@@ -68,8 +68,8 @@ open class SQLService:DBService{
         let task = URLSession.shared.dataTask(with: urlRequest as URLRequest) {
             (data, response, error) -> Void in
             
-            let httpResponse = response as! HTTPURLResponse
-            let statusCode = httpResponse.statusCode
+            let httpResponse = response as? HTTPURLResponse
+            let statusCode = httpResponse?.statusCode
             
             if (statusCode == 200) {
                 print("Everyone is fine, file downloaded successfully.",data)
@@ -77,13 +77,16 @@ open class SQLService:DBService{
                 do{
                     
                     let json = try JSONSerialization.jsonObject(with: data!, options:[])
-                    print(json)
-                    for entry in json as! [[String: AnyObject]]{
-                        if(financeType == "BalanceItem"){
-                            let bi = BalanceItem(map: Map(mappingType: .fromJSON , JSON: entry))
+                    print("json",json)
+                
+                    if let json = json as? [String:[[String: AnyObject]]]{
+                        if let bJson = json["BalanceItem"]{
+                        for entry in bJson {
+                                let bi = BalanceItem(map: Map(mappingType: .fromJSON , JSON: entry))
+                            }
+                            //let je = JournalEntry(map: Map(mappingType: .fromJSON , JSON: entry))
+                            //print("sven hoi",  bi?.isDebet)
                         }
-                        //let je = JournalEntry(map: Map(mappingType: .fromJSON , JSON: entry))
-                        //print("sven hoi",  bi?.isDebet)
                     }
 
                 }catch {

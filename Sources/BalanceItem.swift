@@ -59,7 +59,7 @@ open class BalanceItem: NSObject, MappableDBSender  {
             journalEntryComponents.remove(at: index)
             return true
         }else{
-            print("deleteJournalEntryComponent | could not find: " +  journalEntryComponent.journalEntry!.name + journalEntryComponent.balanceItem.name)
+            print("deleteJournalEntryComponent | could not find: " +  journalEntryComponent.journalEntry!.name + (journalEntryComponent.balanceItem?.name ?? ""))
             return false
         }
     }

@@ -12,7 +12,7 @@ import ObjectMapper
 open class JournalEntryComponent: NSObject, Mappable {
     public var isDebet:Bool
     public var amount:Float
-    public var balanceItem:BalanceItem
+    public var balanceItem:BalanceItem?
     public var journalEntry:JournalEntry?
     public var id:String
     
@@ -38,12 +38,12 @@ open class JournalEntryComponent: NSObject, Mappable {
     
     //should only be called from journalEntry
     func addToBalanceItem(){
-        balanceItem.addJournalEntryComponent(self)
+        balanceItem?.addJournalEntryComponent(self)
     }
  
     //should only be called from journalEntry
     func deleteFromBalanceItem(){
-        if (!balanceItem.deleteJournalEntryComponent(self)){
+        if (!(balanceItem?.deleteJournalEntryComponent(self) ?? true)  ){
             print("error deleting journal entry")
         }
     }
