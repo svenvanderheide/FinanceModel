@@ -13,6 +13,9 @@ open class JournalEntryComponent: NSObject, Mappable {
     public var isDebet:Bool
     public var amount:Float
     public var balanceItem:BalanceItem?
+    
+    /// as a substitute for the balance item if the balance item is not loaded
+    public var balanceItemId:String?
     public var journalEntry:JournalEntry?
     public var id:String
     
@@ -26,10 +29,10 @@ open class JournalEntryComponent: NSObject, Mappable {
         
     }
     
-    required public init?(map: Map) {
+    required public init?(map: Map)  {
         isDebet = true
         amount = 0
-        balanceItem = balanceItemList.first!
+        balanceItemId  <- map["BIID"]// throws an error when it fails
         self.id = NSUUID().uuidString
         super.init()
         mapping(map: map)
