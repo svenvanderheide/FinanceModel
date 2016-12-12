@@ -111,13 +111,13 @@ open class JournalEntry: NSObject, MappableDBSender{
         }
     }
     
-    public func getWriteStatemnt()->String{
-        var writeStatement = "";
+    public func getWriteStatemnt()->[String]{
+        var writeStatement = [String]();
         for jec in journalEntryComponents!{
             //"INSERT INTO `JournalEntryComponent` (`BIID`, `Amount`, `IsDebit`, `JEID`) VALUES (1, $a , $id, 1);";
-            writeStatement += "INSERT INTO `perfectdb`.`JournalEntryComponent` (`ID`, `BIID`, `Amount`, `IsDebit`, `JEID`) VALUES ('\(jec.id )','\(jec.balanceItem?.id ?? jec.balanceItemId )', '\(jec.amount)', \(jec.isDebet), \(jec.journalEntry!.id)); ";
+            writeStatement.append("INSERT INTO `perfectdb`.`JournalEntryComponent` (`ID`, `BIID`, `Amount`, `IsDebit`, `JEID`) VALUES ('\(jec.id )','\((jec.balanceItem?.id ?? jec.balanceItemId)! )', \(jec.amount), \(jec.isDebet), '\(jec.journalEntry!.id)'); ");
         }
-        writeStatement += "INSERT INTO `perfectdb`.`JournalEntry` (`ID`, `Name`, `Date`, `UID`) VALUES ('\(self.id)','\(self.name)', '\(DateTransform().transformToJSON(self.date))', 123213);";
+        writeStatement.append("INSERT INTO `perfectdb`.`JournalEntry` (`ID`, `Name`, `Date`, `UID`) VALUES ('\(self.id)','\(self.name)', \((DateTransform().transformToJSON(self.date) ?? 12345)!), 123213);");
         return writeStatement;
     }
     

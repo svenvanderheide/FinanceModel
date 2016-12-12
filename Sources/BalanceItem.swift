@@ -130,8 +130,8 @@ open class BalanceItem: NSObject, MappableDBSender  {
         id      <- map["ID"]
         mainBalanceItem <- map["parentBIID"]
     }
-    public func getWriteStatemnt()->String{
-        return "INSERT INTO `perfectdb`.`BalanceItem` (`ID`, `Name`, `IsDebit`, `UID`) VALUES ('\(id)', '\(name)', \(isDebet), 123213);"
+    public func getWriteStatemnt()->[String]{
+        return ["INSERT INTO `perfectdb`.`BalanceItem` (`ID`, `Name`, `IsDebit`, `UID`) VALUES ('\(id)', '\(name)', \(isDebet), 123213);"]
     }
     
    

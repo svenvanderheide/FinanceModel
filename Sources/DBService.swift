@@ -21,7 +21,7 @@ public protocol MappableDBSender:DBSender, Mappable{
 
 public protocol DBSender{
     var DBService:DBService?{get}
-    func getWriteStatemnt()->String
+    func getWriteStatemnt()->[String]
 }
 
 open class SQLService:DBService{
