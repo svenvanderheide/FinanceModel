@@ -64,8 +64,8 @@ open class BalanceItem: NSObject, MappableDBSender  {
         }
     }
     
-    public func getAmountForDate(_ date:Date)->Float{
-        var totalAmount:Float = 0
+    public func getAmountForDate(_ date:Date)->Double{
+        var totalAmount:Double = 0
         let relevantComponents = self.journalEntryComponents.filter { (comp) -> Bool in
             (comp.journalEntry?.date.isLessThanDate(date))!
         }
@@ -75,8 +75,8 @@ open class BalanceItem: NSObject, MappableDBSender  {
         return totalAmount
     }
     
-    public func getTotalAmountForDate(_ date:Date)->Float{
-        var totalAmount:Float = 0
+    public func getTotalAmountForDate(_ date:Date)->Double{
+        var totalAmount:Double = 0
         var relevantComponents = self.journalEntryComponents
         for bi in self.relatedBalanceItem{
             relevantComponents += bi.journalEntryComponents
@@ -97,9 +97,9 @@ open class BalanceItem: NSObject, MappableDBSender  {
     }
     
     
-    public func getAmountForPeriod(_ date:[Date])->[Float]?{
-        var totalPositveAmountAmount:Float = 0
-        var totalNegativeAmount:Float = 0
+    public func getAmountForPeriod(_ date:[Date])->[Double]?{
+        var totalPositveAmountAmount:Double = 0
+        var totalNegativeAmount:Double = 0
         guard date.count == 2 else{
             return nil}
         

@@ -99,7 +99,7 @@ open class JournalEntry: NSObject, MappableDBSender{
         }
     }
     public func checkBalanceComponents(_ journalEntryComponents:[JournalEntryComponent])->Bool{
-        var totalValue:Float = 0
+        var totalValue:Double = 0
         for component  in journalEntryComponents{
             totalValue += component.isDebet ? component.amount : component.amount * -1
         }

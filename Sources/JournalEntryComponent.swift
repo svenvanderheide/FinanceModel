@@ -11,7 +11,7 @@ import ObjectMapper
 
 open class JournalEntryComponent: NSObject, Mappable {
     public var isDebet:Bool
-    public var amount:Float
+    public var amount:Double
     public var balanceItem:BalanceItem?
     
     /// as a substitute for the balance item if the balance item is not loaded
@@ -20,7 +20,7 @@ open class JournalEntryComponent: NSObject, Mappable {
     public var id:String
     
     
-    public init(newIsDebet:Bool, newAmount:Float, newBalanceItem:BalanceItem){
+    public init(newIsDebet:Bool, newAmount:Double, newBalanceItem:BalanceItem){
         isDebet = newIsDebet
         amount = newAmount
         balanceItem = newBalanceItem
